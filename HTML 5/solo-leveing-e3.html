@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bb.css">
+  <!-- <link rel="stylesheet" href="bb.css"> -->
+  <title>Movie Detail Page</title>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">Movie</a>
+    </div>
+    <button class="menu-toggle">☰</button>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Movie Video Section -->
+    <section class="movie-detail">
+  <!-- YouTube video iframe -->
+ <iframe 
+    class="youtube-video" 
+    width="106%" 
+    height="300px" 
+    src="https://www.youtube.com/embed/67Pingu3Z2I?si=R9R-BacyLLbJFofQ" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+    </section>
+
+    <!-- Seasons and Episodes -->
+    <section class="episodes">
+      <div class="container">
+        <h1>Seasons and Episodes</h1>
+        <div class="season">
+          <div class="season-header">
+            <div class="season-number">1</div>
+            <div class="season-title">
+              <h2>Season 1</h2>
+              <p>Apr. 02, 2023</p>
+            </div>
+          </div>
+          <div class="episode-list">
+
+        
+
+             <!--episode 3-->
+             <a href="solo-leveing-e4.html">
+            <div class="episode">
+              <img src="photo/m5.jpeg" alt="Episode 1 Thumbnail">
+              <div class="episode-info">
+                <h3>EPISODE4</h3>
+                <p>This Is Why I Can't ...</p>
+                <p class="date">Apr. 02, 2023</p>
+              </div>
+            </div>
+             </a>
+                         <!-- Episode 4 -->
+             <a href="episode5.html">
+
+            <div class="episode">
+              <img src="photo/m5.jpeg" alt="Episode 2 Thumbnail">
+              <div class="episode-info">
+                <h3>EPISODE5</h3>
+                <p>It's Almost Time for t...</p>
+                <p class="date">Apr. 09, 2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="episode6.html">
+            <div class="episode">
+              <img src="photo/m5.jpeg" alt="Episode 1 Thumbnail">
+              <div class="episode-info">
+                <h3>EPISODE6</h3>
+                <p>This Is Why I Can't ...</p>
+                <p class="date">Apr. 02, 2023</p>
+              </div>
+            </div>
+          </a>
+            <!-- Episode 2 -->
+             <a href="episodefull.html">
+            <div class="episode">
+              <img src="photo/m5.jpeg" alt="Episode 2 Thumbnail">
+              <div class="episode-info">
+                <h3></h3>
+                <p>It's Almost Time for t...</p>
+                <p class="date">Apr. 09, 2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="episode6.html">
+            <div class="episode">
+              <img src="photo/m5.jpeg" alt="Episode 1 Thumbnail">
+              <div class="episode-info">
+                <h3>EPISODE7</h3>
+                <p>This Is Why I Can't ...</p>
+                <p class="date">Apr. 02, 2023</p>
+              </div>
+            </div>
+          </a>
+            <!-- Episode 2 -->
+             <a href="episodefull.html">
+            <div class="episode">
+              <img src="photo/m5.jpeg" alt="Episode 2 Thumbnail">
+              <div class="episode-info">
+                <h3>EPISODE8</h3>
+                <p>It's Almost Time for t...</p>
+                <p class="date">Apr. 09, 2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="episode6.html">
+            <div class="episode">
+              <img src="photo/m5.jpeg" alt="Episode 1 Thumbnail">
+              <div class="episode-info">
+                <h3>EPISODE9</h3>
+                <p>This Is Why I Can't ...</p>
+                <p class="date">Apr. 02, 2023</p>
+              </div>
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js">
+    // Menu toggle functionality
+const menuToggle = document.querySelector('.menu-toggle');
+
+menuToggle.addEventListener('click', () => {
+  alert('Menu toggle clicked!');
+});
+
+// Add interactivity for episodes (optional)
+document.querySelectorAll('.episode').forEach((episode) => {
+  episode.addEventListener('click', () => {
+    alert(`You clicked on ${episode.querySelector('h3').innerText}`);
+  });
+});
+  </script>
+</body>
+</html>
